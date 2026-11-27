@@ -8,3 +8,19 @@ body {
 h1 {
     color: #2c3e50;
 }
+
+ul > li {
+  background-color: #f8f9fa;      /* Fondo gris muy suave */
+  border-left: 4px solid #007bff; /* Borde izquierdo de color */
+  margin-bottom: 10px;            /* Espacio entre cada elemento */
+  padding: 12px 16px;             /* Espacio interior */
+  border-radius: 6px;             /* Esquinas redondeadas */
+  list-style: none;               /* Quita los puntos por defecto */
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Efecto sutil al pasar el ratón por encima */
+ul > li:hover {
+  background-color: #e9ecef;
+  transform: translateX(5px);     /* Se desplaza ligeramente a la derecha */
+}
